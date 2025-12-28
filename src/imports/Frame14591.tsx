@@ -1,6 +1,8 @@
 import svgPaths from "./svg-eqw8jkd85m";
-import imgImageOuVideoDuServices from "@/assets/ece298d0ec2c16f10310d45724b276a6035cb503.png";
-import img from "@/assets/3fc899ea58b6508f7ebd2ba03a7b82b8b9efa9e9.png";
+
+// Assets depuis public/
+const imgImageOuVideoDuServices = "/assets/ece298d0ec2c16f10310d45724b276a6035cb503.png";
+const img = "/assets/3fc899ea58b6508f7ebd2ba03a7b82b8b9efa9e9.png";
 
 function Frame7() {
   return (

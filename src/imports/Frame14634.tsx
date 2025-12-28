@@ -1,22 +1,24 @@
 import svgPaths from "./svg-n1s2bt9r7k";
-import imgHands2 from "@/assets/5e60311268eac808eaade0b025715f79f24ade31.png";
-import imgFb112 from "@/assets/75d098edacfd94c1bce6468b9eff3779ea74f979.png";
-import imgRemoveBg1 from "@/assets/07b35ab1de6cca52d52120a93c6191bf7086177d.png";
-import imgYtb112 from "@/assets/050a18f88ed7ea85f0983ec1fc11f43b07aed07b.png";
-import imgInst112 from "@/assets/86dcefb9477f61f9ce7296bd5cfb47bd9bc77b13.png";
-import imgImage25 from "@/assets/59ba0d40ae079fb4994abba251d7610744b0f8db.png";
-import imgImageOuVideoDuServices from "@/assets/ece298d0ec2c16f10310d45724b276a6035cb503.png";
-import imgImagePdp from "@/assets/3fc899ea58b6508f7ebd2ba03a7b82b8b9efa9e9.png";
-import imgWoman1 from "@/assets/3f18a1bcb3010a7cb832c06c549b570cad163eb1.png";
-import imgHands3 from "@/assets/f9775a8a04adfbb6d9f112f67f6d0d93c731f708.png";
-import imgLike111 from "@/assets/02a650a1a1ca32c4ad6e82400109d4d30e0ebc47.png";
-import imgImage from "@/assets/c4e1c40e7c8803235b3fb411339615a2cd0704eb.png";
-import imgImage1 from "@/assets/8560c92425087dc2482892462124a91a6e2561a3.png";
-import imgRemoveBg3 from "@/assets/eb549fcf1ece6a1956966c10b8e089c5ab16408f.png";
-import imgImage2 from "@/assets/e756a21ccab6e1b57f3af24b667128d58da9d275.png";
-import imgFrame30 from "@/assets/8252dff074bbf2ed399496a6b6867770170d23e9.png";
-import imgFrame31 from "@/assets/40b3aec0e9ebe12c9f96933d3bfd8b1f78255053.png";
-import imgFrame32 from "@/assets/47f132f5a5ce986409076ef1a924e3ff187e23cc.png";
+
+// Assets depuis public/
+const imgHands2 = "/assets/5e60311268eac808eaade0b025715f79f24ade31.png";
+const imgFb112 = "/assets/75d098edacfd94c1bce6468b9eff3779ea74f979.png";
+const imgRemoveBg1 = "/assets/07b35ab1de6cca52d52120a93c6191bf7086177d.png";
+const imgYtb112 = "/assets/050a18f88ed7ea85f0983ec1fc11f43b07aed07b.png";
+const imgInst112 = "/assets/86dcefb9477f61f9ce7296bd5cfb47bd9bc77b13.png";
+const imgImage25 = "/assets/59ba0d40ae079fb4994abba251d7610744b0f8db.png";
+const imgImageOuVideoDuServices = "/assets/ece298d0ec2c16f10310d45724b276a6035cb503.png";
+const imgImagePdp = "/assets/3fc899ea58b6508f7ebd2ba03a7b82b8b9efa9e9.png";
+const imgWoman1 = "/assets/3f18a1bcb3010a7cb832c06c549b570cad163eb1.png";
+const imgHands3 = "/assets/f9775a8a04adfbb6d9f112f67f6d0d93c731f708.png";
+const imgLike111 = "/assets/02a650a1a1ca32c4ad6e82400109d4d30e0ebc47.png";
+const imgImage = "/assets/c4e1c40e7c8803235b3fb411339615a2cd0704eb.png";
+const imgImage1 = "/assets/8560c92425087dc2482892462124a91a6e2561a3.png";
+const imgRemoveBg3 = "/assets/eb549fcf1ece6a1956966c10b8e089c5ab16408f.png";
+const imgImage2 = "/assets/e756a21ccab6e1b57f3af24b667128d58da9d275.png";
+const imgFrame30 = "/assets/8252dff074bbf2ed399496a6b6867770170d23e9.png";
+const imgFrame31 = "/assets/40b3aec0e9ebe12c9f96933d3bfd8b1f78255053.png";
+const imgFrame32 = "/assets/47f132f5a5ce986409076ef1a924e3ff187e23cc.png";
 
 function Logo() {
   return (

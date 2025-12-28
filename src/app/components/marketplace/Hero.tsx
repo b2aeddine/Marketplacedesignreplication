@@ -1,11 +1,12 @@
 import React from 'react';
 import svgPaths from "../../../imports/svg-n1s2bt9r7k";
-import imgHands2 from "@/assets/5e60311268eac808eaade0b025715f79f24ade31.png";
-import imgFb112 from "@/assets/75d098edacfd94c1bce6468b9eff3779ea74f979.png";
-import imgRemoveBg1 from "@/assets/07b35ab1de6cca52d52120a93c6191bf7086177d.png";
-import imgYtb112 from "@/assets/050a18f88ed7ea85f0983ec1fc11f43b07aed07b.png";
-import imgInst112 from "@/assets/86dcefb9477f61f9ce7296bd5cfb47bd9bc77b13.png";
-import { ImageWithFallback } from "../figma/ImageWithFallback";
+
+// Assets depuis public/ - pas d'import, juste des URLs directes
+const imgHands2 = "/assets/5e60311268eac808eaade0b025715f79f24ade31.png";
+const imgFb112 = "/assets/75d098edacfd94c1bce6468b9eff3779ea74f979.png";
+const imgRemoveBg1 = "/assets/07b35ab1de6cca52d52120a93c6191bf7086177d.png";
+const imgYtb112 = "/assets/050a18f88ed7ea85f0983ec1fc11f43b07aed07b.png";
+const imgInst112 = "/assets/86dcefb9477f61f9ce7296bd5cfb47bd9bc77b13.png";
 
 function Group() {
   return (
@@ -125,22 +126,37 @@ export function Hero() {
         </div>
       </div>
       <div className="hidden lg:block"><Line /></div>
+
+      {/* IMAGE PRINCIPALE - TOUJOURS VISIBLE */}
+      <div className="w-full flex justify-center my-8">
+        <div className="relative max-w-[500px] w-full">
+          <div className="absolute -inset-8 blur-3xl bg-[#fea38e] opacity-30 rounded-full" />
+          <img
+            src={imgHands2}
+            alt="Créateurs qui collaborent"
+            className="relative w-full h-auto rounded-3xl shadow-xl"
+          />
+        </div>
+      </div>
+
+      <Content1 />
+
+      {/* Decorative images - hidden on small screens */}
       <div className="absolute hidden xl:block h-[426px] left-[1243.5px] top-[415px] w-[403px]" data-name="hands_2">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[150.09%] left-[-118.58%] max-w-none top-[-50.09%] w-[218.58%]" src={imgHands2} />
+          <img alt="Décoration" className="absolute h-[150.09%] left-[-118.58%] max-w-none top-[-50.09%] w-[218.58%]" src={imgHands2} />
         </div>
       </div>
       <div className="absolute hidden lg:block h-[217px] left-[-142.5px] top-[-8px] w-[414px]" data-name="hands_2">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[252.75%] left-0 max-w-none top-0 w-[182.09%]" src={imgHands2} />
+          <img alt="Décoration" className="absolute h-[252.75%] left-0 max-w-none top-0 w-[182.09%]" src={imgHands2} />
         </div>
       </div>
-      <Content1 />
       <div className="absolute hidden xl:flex h-[41.798px] items-center justify-center left-[1459px] top-[140px] w-[42.352px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
         <div className="flex-none rotate-[21.853deg]">
           <div className="h-[31.858px] relative w-[32.854px]" data-name="fb (1) (1) 2">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-[159.68%] left-[-53.92%] max-w-none top-[-22.01%] w-[204.78%]" src={imgFb112} />
+              <img alt="Facebook" className="absolute h-[159.68%] left-[-53.92%] max-w-none top-[-22.01%] w-[204.78%]" src={imgFb112} />
             </div>
           </div>
         </div>
@@ -149,7 +165,7 @@ export function Hero() {
         <div className="flex-none rotate-[351.383deg]">
           <div className="h-[105.391px] relative w-[66.644px]" data-name="Remove-bg 1">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-[136.73%] left-[-60.66%] max-w-none top-[-22.45%] w-[219.67%]" src={imgRemoveBg1} />
+              <img alt="Créatrice" className="absolute h-[136.73%] left-[-60.66%] max-w-none top-[-22.45%] w-[219.67%]" src={imgRemoveBg1} />
             </div>
           </div>
         </div>
@@ -159,7 +175,7 @@ export function Hero() {
         <div className="flex-none rotate-[345deg]">
           <div className="h-[69.775px] relative w-[44.122px]" data-name="Remove-bg 1">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-[136.73%] left-[-60.66%] max-w-none top-[-22.45%] w-[219.67%]" src={imgRemoveBg1} />
+              <img alt="Créatrice" className="absolute h-[136.73%] left-[-60.66%] max-w-none top-[-22.45%] w-[219.67%]" src={imgRemoveBg1} />
             </div>
           </div>
         </div>
@@ -168,7 +184,7 @@ export function Hero() {
         <div className="flex-none rotate-[342.356deg]">
           <div className="h-[53.139px] relative w-[54.8px]" data-name="fb (1) (1) 1">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-[159.68%] left-[-53.92%] max-w-none top-[-22.01%] w-[204.78%]" src={imgFb112} />
+              <img alt="Facebook" className="absolute h-[159.68%] left-[-53.92%] max-w-none top-[-22.01%] w-[204.78%]" src={imgFb112} />
             </div>
           </div>
         </div>
@@ -177,7 +193,7 @@ export function Hero() {
         <div className="flex-none rotate-[25.588deg]">
           <div className="h-[26.695px] relative w-[37.153px]" data-name="ytb (1) (1) 2">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-[187.79%] left-[-17.71%] max-w-none top-[-43.04%] w-[134.53%]" src={imgYtb112} />
+              <img alt="YouTube" className="absolute h-[187.79%] left-[-17.71%] max-w-none top-[-43.04%] w-[134.53%]" src={imgYtb112} />
             </div>
           </div>
         </div>
@@ -186,26 +202,8 @@ export function Hero() {
         <div className="flex-none rotate-[157.752deg] scale-y-[-100%]">
           <div className="h-[26.243px] relative w-[26.757px]" data-name="inst (1) (1) 2">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <ImageWithFallback
-                alt="Logo Instagram"
-                className="absolute h-[158.57%] left-[-54.11%] max-w-none top-[-21.85%] w-[205.48%]"
-                src={imgInst112}
-              />
+              <img alt="Instagram" className="absolute h-[158.57%] left-[-54.11%] max-w-none top-[-21.85%] w-[205.48%]" src={imgInst112} />
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Visuel principal toujours visible pour éviter les images invisibles en local */}
-      <div className="mt-10 w-full flex justify-center">
-        <div className="relative max-w-[520px] w-full">
-          <div className="absolute -inset-6 blur-3xl bg-[rgba(254,163,142,0.35)] rounded-full" aria-hidden />
-          <div className="relative overflow-hidden rounded-[32px] shadow-lg border border-[#ffd7cb] bg-white/80 backdrop-blur">
-            <ImageWithFallback
-              alt="Créateurs qui collaborent"
-              src={imgHands2}
-              className="block w-full h-auto object-contain"
-            />
           </div>
         </div>
       </div>

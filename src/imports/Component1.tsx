@@ -1,4 +1,5 @@
-import imgImage25 from "@/assets/59ba0d40ae079fb4994abba251d7610744b0f8db.png";
+// Asset depuis public/
+const imgImage25 = "/assets/59ba0d40ae079fb4994abba251d7610744b0f8db.png";
 
 export default function Component() {
   return (

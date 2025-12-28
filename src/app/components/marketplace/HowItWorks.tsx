@@ -1,17 +1,19 @@
 import React from 'react';
 import svgPaths from "../../../imports/svg-n1s2bt9r7k";
-import imgImageOuVideoDuServices from "@/assets/ece298d0ec2c16f10310d45724b276a6035cb503.png";
-import imgWoman1 from "@/assets/3f18a1bcb3010a7cb832c06c549b570cad163eb1.png";
-import imgFb112 from "@/assets/75d098edacfd94c1bce6468b9eff3779ea74f979.png";
-import imgInst112 from "@/assets/86dcefb9477f61f9ce7296bd5cfb47bd9bc77b13.png";
-import imgYtb112 from "@/assets/050a18f88ed7ea85f0983ec1fc11f43b07aed07b.png";
-import imgHands3 from "@/assets/f9775a8a04adfbb6d9f112f67f6d0d93c731f708.png";
-import imgLike111 from "@/assets/02a650a1a1ca32c4ad6e82400109d4d30e0ebc47.png";
-import imgImage from "@/assets/c4e1c40e7c8803235b3fb411339615a2cd0704eb.png";
-import imgRemoveBg1 from "@/assets/07b35ab1de6cca52d52120a93c6191bf7086177d.png";
-import imgImage1 from "@/assets/8560c92425087dc2482892462124a91a6e2561a3.png";
-import imgRemoveBg3 from "@/assets/eb549fcf1ece6a1956966c10b8e089c5ab16408f.png";
-import imgImage2 from "@/assets/e756a21ccab6e1b57f3af24b667128d58da9d275.png";
+
+// Assets depuis public/
+const imgImageOuVideoDuServices = "/assets/ece298d0ec2c16f10310d45724b276a6035cb503.png";
+const imgWoman1 = "/assets/3f18a1bcb3010a7cb832c06c549b570cad163eb1.png";
+const imgFb112 = "/assets/75d098edacfd94c1bce6468b9eff3779ea74f979.png";
+const imgInst112 = "/assets/86dcefb9477f61f9ce7296bd5cfb47bd9bc77b13.png";
+const imgYtb112 = "/assets/050a18f88ed7ea85f0983ec1fc11f43b07aed07b.png";
+const imgHands3 = "/assets/f9775a8a04adfbb6d9f112f67f6d0d93c731f708.png";
+const imgLike111 = "/assets/02a650a1a1ca32c4ad6e82400109d4d30e0ebc47.png";
+const imgImage = "/assets/c4e1c40e7c8803235b3fb411339615a2cd0704eb.png";
+const imgRemoveBg1 = "/assets/07b35ab1de6cca52d52120a93c6191bf7086177d.png";
+const imgImage1 = "/assets/8560c92425087dc2482892462124a91a6e2561a3.png";
+const imgRemoveBg3 = "/assets/eb549fcf1ece6a1956966c10b8e089c5ab16408f.png";
+const imgImage2 = "/assets/e756a21ccab6e1b57f3af24b667128d58da9d275.png";
 
 function Frame27() {
   return (
