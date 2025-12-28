@@ -5,6 +5,7 @@ import imgFb112 from "@/assets/75d098edacfd94c1bce6468b9eff3779ea74f979.png";
 import imgRemoveBg1 from "@/assets/07b35ab1de6cca52d52120a93c6191bf7086177d.png";
 import imgYtb112 from "@/assets/050a18f88ed7ea85f0983ec1fc11f43b07aed07b.png";
 import imgInst112 from "@/assets/86dcefb9477f61f9ce7296bd5cfb47bd9bc77b13.png";
+import { ImageWithFallback } from "../figma/ImageWithFallback";
 
 function Group() {
   return (
@@ -185,8 +186,26 @@ export function Hero() {
         <div className="flex-none rotate-[157.752deg] scale-y-[-100%]">
           <div className="h-[26.243px] relative w-[26.757px]" data-name="inst (1) (1) 2">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-[158.57%] left-[-54.11%] max-w-none top-[-21.85%] w-[205.48%]" src={imgInst112} />
+              <ImageWithFallback
+                alt="Logo Instagram"
+                className="absolute h-[158.57%] left-[-54.11%] max-w-none top-[-21.85%] w-[205.48%]"
+                src={imgInst112}
+              />
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Visuel principal toujours visible pour éviter les images invisibles en local */}
+      <div className="mt-10 w-full flex justify-center">
+        <div className="relative max-w-[520px] w-full">
+          <div className="absolute -inset-6 blur-3xl bg-[rgba(254,163,142,0.35)] rounded-full" aria-hidden />
+          <div className="relative overflow-hidden rounded-[32px] shadow-lg border border-[#ffd7cb] bg-white/80 backdrop-blur">
+            <ImageWithFallback
+              alt="Créateurs qui collaborent"
+              src={imgHands2}
+              className="block w-full h-auto object-contain"
+            />
           </div>
         </div>
       </div>
