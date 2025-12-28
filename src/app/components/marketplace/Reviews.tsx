@@ -1,8 +1,10 @@
 import React from 'react';
 import svgPaths from "../../../imports/svg-n1s2bt9r7k";
-import imgFrame30 from "@/assets/8252dff074bbf2ed399496a6b6867770170d23e9.png";
-import imgFrame31 from "@/assets/40b3aec0e9ebe12c9f96933d3bfd8b1f78255053.png";
-import imgFrame32 from "@/assets/47f132f5a5ce986409076ef1a924e3ff187e23cc.png";
+
+// Assets depuis public/
+const imgFrame30 = "/assets/8252dff074bbf2ed399496a6b6867770170d23e9.png";
+const imgFrame31 = "/assets/40b3aec0e9ebe12c9f96933d3bfd8b1f78255053.png";
+const imgFrame32 = "/assets/47f132f5a5ce986409076ef1a924e3ff187e23cc.png";
 
 function ReviewCard({ title, bgColor, textColor = "#313d4f", buttonTextColor = "#fea38e" }: { title: string, bgColor: string, textColor?: string, buttonTextColor?: string }) {
   return (
