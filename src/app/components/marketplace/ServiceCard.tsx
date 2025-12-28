@@ -29,17 +29,17 @@ export function ServiceCard({
   bio = "BIO decrivez ce que vous représenter en quelque ligne"
 }: ServiceCardProps) {
   return (
-    <div className="content-stretch flex flex-col gap-[10px] items-start justify-end px-[4px] py-[5px] relative shrink-0 w-[389px] h-[383px]">
+    <div className="content-stretch flex flex-col gap-[10px] items-start justify-end px-[4px] py-[5px] relative shrink-0 w-full max-w-[389px] min-h-[383px]">
       {/* Frame7: Service Image */}
-      <div className="absolute content-stretch flex gap-[10px] items-start left-0 p-[10px] top-0">
-        <div className="absolute h-[179px] left-0 rounded-tl-[15px] rounded-tr-[15px] top-0 w-[389px]" data-name="image ou video du services">
+      <div className="absolute content-stretch flex gap-[10px] items-start left-0 p-[10px] top-0 w-full">
+        <div className="absolute h-[179px] left-0 rounded-tl-[15px] rounded-tr-[15px] top-0 w-full" data-name="image ou video du services">
           <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover opacity-20 pointer-events-none rounded-tl-[15px] rounded-tr-[15px] size-full" src={serviceImage} />
         </div>
-        <div className="absolute h-[204px] left-0 rounded-bl-[15px] rounded-br-[15px] shadow-[29px_70px_21px_0px_rgba(0,0,0,0),19px_45px_19px_0px_rgba(0,0,0,0.01),11px_25px_16px_0px_rgba(0,0,0,0.05),5px_11px_12px_0px_rgba(0,0,0,0.09),1px_3px_7px_0px_rgba(0,0,0,0.1)] top-[179px] w-[389px]" style={{ backgroundImage: "linear-gradient(179.769deg, rgb(254, 163, 142) 125.39%, rgb(248, 245, 240) 76.177%)" }} />
+        <div className="absolute h-[204px] left-0 rounded-bl-[15px] rounded-br-[15px] shadow-[29px_70px_21px_0px_rgba(0,0,0,0),19px_45px_19px_0px_rgba(0,0,0,0.01),11px_25px_16px_0px_rgba(0,0,0,0.05),5px_11px_12px_0px_rgba(0,0,0,0.09),1px_3px_7px_0px_rgba(0,0,0,0.1)] top-[179px] w-full" style={{ backgroundImage: "linear-gradient(179.769deg, rgb(254, 163, 142) 125.39%, rgb(248, 245, 240) 76.177%)" }} />
       </div>
 
       {/* Frame6: Content */}
-      <div className="content-stretch flex flex-col gap-[11px] items-start relative shrink-0 w-[380.45px]">
+      <div className="content-stretch flex flex-col gap-[11px] items-start relative shrink-0 w-full">
         {/* Frame1: Profile, Title, Rating */}
         <div className="content-stretch flex gap-[8px] items-end relative shrink-0 w-full">
           {/* PhotoDeProfil */}
@@ -57,7 +57,7 @@ export function ServiceCard({
           </div>
           
           {/* Frame: Title & Category */}
-          <div className="content-stretch flex flex-col gap-[5px] items-start relative shrink-0 w-[206px]">
+          <div className="content-stretch flex flex-col gap-[5px] items-start relative shrink-0 flex-1 min-w-0">
             <p className="font-['DM_Sans:SemiBold',sans-serif] font-semibold h-[24.807px] leading-[normal] relative shrink-0 text-[#1f392c] text-[18px] w-full" style={{ fontVariationSettings: "'opsz' 14" }}>
               {title}
             </p>
@@ -99,11 +99,11 @@ export function ServiceCard({
             </p>
             <p className="font-['Inter:Semi_Bold',sans-serif] not-italic relative shrink-0 text-[14px] text-[rgba(0,0,0,0.5)] w-full">{city}</p>
           </div>
-          <p className="font-['Inter:Medium_Italic',sans-serif] font-medium h-[47px] italic relative shrink-0 text-[#3e2522] text-[12px] w-[292px]">{bio}</p>
+          <p className="font-['Inter:Medium_Italic',sans-serif] font-medium min-h-[47px] italic relative shrink-0 text-[#3e2522] text-[12px] flex-1">{bio}</p>
         </div>
 
         {/* Frame5: Socials & Price */}
-        <div className="content-stretch flex gap-[125px] items-end relative shrink-0 w-[366px]">
+        <div className="content-stretch flex flex-wrap gap-4 lg:gap-8 items-end justify-between relative shrink-0 w-full">
           <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-name="Social Media">
             {/* Youtube */}
             <div className="[grid-area:1_/_1] grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[33px] mt-0 place-items-start relative" data-name="Youtube">

@@ -15,11 +15,11 @@ import imgImage2 from "figma:asset/e756a21ccab6e1b57f3af24b667128d58da9d275.png"
 
 function Frame27() {
   return (
-    <div className="content-stretch flex flex-col gap-[89px] items-center relative shrink-0 w-[1354px]">
-      <p className="font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] min-w-full relative shrink-0 text-[#1f392c] text-[56px] text-center w-[min-content]" style={{ fontVariationSettings: "'opsz' 14" }}>
+    <div className="content-stretch flex flex-col gap-8 md:gap-[89px] items-center relative shrink-0 w-full max-w-[1354px] px-4">
+      <p className="font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] min-w-full relative shrink-0 text-[#1f392c] text-[clamp(28px,5vw,56px)] text-center w-[min-content]" style={{ fontVariationSettings: "'opsz' 14" }}>
         Comment ca marche Collabmarket ?
       </p>
-      <div className="absolute flex h-[16.394px] items-center justify-center left-[797px] top-[64.99px] w-[326.132px]" style={{ "--transform-inner-width": "300", "--transform-inner-height": "150" } as React.CSSProperties}>
+      <div className="absolute hidden lg:flex h-[16.394px] items-center justify-center left-[797px] top-[64.99px] w-[326.132px]" style={{ "--transform-inner-width": "300", "--transform-inner-height": "150" } as React.CSSProperties}>
         <div className="flex-none rotate-[359.228deg]">
           <div className="h-[12px] relative w-[326px]" data-name="Vector">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 326 12">
@@ -28,7 +28,7 @@ function Frame27() {
           </div>
         </div>
       </div>
-      <div className="h-[635px] relative rounded-[30px] shrink-0 w-full">
+      <div className="h-[300px] md:h-[450px] lg:h-[635px] relative rounded-[30px] shrink-0 w-full">
         <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none rounded-[30px] size-full" src={imgImageOuVideoDuServices} />
       </div>
     </div>
@@ -37,7 +37,7 @@ function Frame27() {
 
 function IllustrationImage() {
   return (
-    <div className="h-[515px] overflow-clip relative shrink-0 w-[891px]" data-name="Illustration & Image">
+    <div className="h-[300px] md:h-[400px] lg:h-[515px] overflow-clip relative shrink-0 w-full max-w-[891px]" data-name="Illustration & Image">
       <div className="absolute h-[323.5px] left-[484px] top-[185.5px] w-[162.5px]">
         <div className="absolute inset-[-2.47%_-4.92%_-2.47%_-0.35%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 171.076 339.501">
@@ -133,12 +133,12 @@ function IllustrationImage() {
 
 function HowWeWorkSection() {
   return (
-    <div className="bg-[#f8f5f0] content-stretch flex flex-col gap-[64px] items-end overflow-clip px-[295px] py-[64px] relative shrink-0" data-name="How we Work Section - 1">
-      <p className="font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#1f392c] text-[56px] text-center w-[922px]" style={{ fontVariationSettings: "'opsz' 14" }}>
-        Vendez vos services sans prospecter grace a l’affiliation
+    <div className="bg-[#f8f5f0] content-stretch flex flex-col gap-8 md:gap-[64px] items-center overflow-clip px-4 md:px-8 lg:px-[100px] xl:px-[295px] py-8 md:py-[64px] relative shrink-0 w-full" data-name="How we Work Section - 1">
+      <p className="font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#1f392c] text-[clamp(24px,5vw,56px)] text-center w-full max-w-[922px]" style={{ fontVariationSettings: "'opsz' 14" }}>
+        Vendez vos services sans prospecter grace a l'affiliation
       </p>
       <IllustrationImage />
-      <div className="absolute flex h-[109.112px] items-center justify-center left-[933px] top-[301px] w-[126.553px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
+      <div className="absolute hidden xl:flex h-[109.112px] items-center justify-center left-[933px] top-[301px] w-[126.553px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
         <div className="flex-none rotate-[20.685deg]">
           <div className="h-[76.455px] relative w-[106.406px]" data-name="ytb (1) (1) 1">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -147,7 +147,7 @@ function HowWeWorkSection() {
           </div>
         </div>
       </div>
-      <div className="absolute flex h-[24.166px] items-center justify-center left-[1098px] top-[607px] w-[28.029px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
+      <div className="absolute hidden xl:flex h-[24.166px] items-center justify-center left-[1098px] top-[607px] w-[28.029px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
         <div className="flex-none rotate-[20.685deg]">
           <div className="h-[16.933px] relative w-[23.566px]" data-name="ytb (1) (1) 3">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -156,7 +156,7 @@ function HowWeWorkSection() {
           </div>
         </div>
       </div>
-      <div className="absolute flex h-[55.762px] items-center justify-center left-[505px] top-[670px] w-[65.435px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
+      <div className="absolute hidden lg:flex h-[55.762px] items-center justify-center left-[505px] top-[670px] w-[65.435px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
         <div className="flex-none rotate-[340.979deg]">
           <div className="h-[39.858px] relative w-[55.473px]" data-name="ytb (1) (1) 2">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -171,18 +171,18 @@ function HowWeWorkSection() {
 
 function HowWeWorkSection1() {
   return (
-    <div className="bg-[#f8f5f0] content-stretch flex flex-col gap-[64px] items-center px-[295px] py-[64px] relative shrink-0" data-name="How we Work Section - 2">
-      <div className="absolute h-[701.954px] left-[-75px] top-0 w-[593.656px]" data-name="Vector">
+    <div className="bg-[#f8f5f0] content-stretch flex flex-col gap-8 md:gap-[64px] items-center px-4 md:px-8 lg:px-[100px] xl:px-[295px] py-8 md:py-[64px] relative shrink-0 w-full overflow-hidden" data-name="How we Work Section - 2">
+      <div className="absolute hidden lg:block h-[701.954px] left-[-75px] top-0 w-[593.656px]" data-name="Vector">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 593.656 701.954">
           <path d={svgPaths.pd41fd00} fill="var(--fill-0, #FEA38E)" id="Vector" />
         </svg>
       </div>
-      <p className="font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#1f392c] text-[56px] text-center w-[922px]" style={{ fontVariationSettings: "'opsz' 14" }}>{`Difficulté à se développer sur n'importe quelle plateforme Nous le faisons pour vous.`}</p>
-      <p className="font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#1f392c] text-[32px] text-center w-[922px]" style={{ fontVariationSettings: "'opsz' 14" }}>
-        Des créateur et influenceurs promouvois vos services en echange d’un pourcentage a l’achat
+      <p className="font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#1f392c] text-[clamp(24px,5vw,56px)] text-center w-full max-w-[922px]" style={{ fontVariationSettings: "'opsz' 14" }}>{`Difficulté à se développer sur n'importe quelle plateforme Nous le faisons pour vous.`}</p>
+      <p className="font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#1f392c] text-[clamp(20px,3vw,32px)] text-center w-full max-w-[922px]" style={{ fontVariationSettings: "'opsz' 14" }}>
+        Des créateur et influenceurs promouvois vos services en echange d'un pourcentage a l'achat
       </p>
-      <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[#1f392c] text-[20px] text-center w-[691px]" style={{ fontVariationSettings: "'opsz' 14" }}>{`L’affiliation est a titre optionel comme pour le pourcentage qui vous est reglabe par vous meme `}</p>
-      <div className="absolute flex h-[496.11px] items-center justify-center left-[-88px] top-[-134.2px] w-[439.761px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
+      <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[#1f392c] text-[clamp(16px,2vw,20px)] text-center w-full max-w-[691px]" style={{ fontVariationSettings: "'opsz' 14" }}>{`L'affiliation est a titre optionel comme pour le pourcentage qui vous est reglabe par vous meme `}</p>
+      <div className="absolute hidden lg:flex h-[496.11px] items-center justify-center left-[-88px] top-[-134.2px] w-[439.761px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
         <div className="flex-none rotate-[332.922deg]">
           <div className="h-[412.496px] relative w-[283.013px]" data-name="hands_3">
             <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
@@ -196,7 +196,7 @@ function HowWeWorkSection1() {
           </div>
         </div>
       </div>
-      <div className="absolute h-[433px] left-[1195px] top-[333px] w-[317px]" data-name="hands_3">
+      <div className="absolute hidden xl:block h-[433px] left-[1195px] top-[333px] w-[317px]" data-name="hands_3">
         <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0 overflow-hidden">
             <img alt="" className="absolute h-[185.45%] left-[-68.71%] max-w-none top-[-85.45%] w-[168.71%]" src={imgHands3} />
@@ -206,12 +206,12 @@ function HowWeWorkSection1() {
           </div>
         </div>
       </div>
-      <div className="absolute h-[464.841px] left-[1263px] top-[130px] w-[366.668px]" data-name="Vector">
+      <div className="absolute hidden xl:block h-[464.841px] left-[1263px] top-[130px] w-[366.668px]" data-name="Vector">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 366.668 464.841">
           <path d={svgPaths.pb8d1770} fill="var(--fill-0, #FEA38E)" id="Vector" />
         </svg>
       </div>
-      <div className="absolute flex h-[128.604px] items-center justify-center left-[210px] top-[280px] w-[141.971px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
+      <div className="absolute hidden lg:flex h-[128.604px] items-center justify-center left-[210px] top-[280px] w-[141.971px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
         <div className="flex-none rotate-[345.661deg]">
           <div className="h-[101.942px] relative w-[120.477px]" data-name="like (1) (1) 1">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -220,7 +220,7 @@ function HowWeWorkSection1() {
           </div>
         </div>
       </div>
-      <div className="absolute flex h-[128.604px] items-center justify-center left-[1146px] top-[215px] w-[141.971px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
+      <div className="absolute hidden xl:flex h-[128.604px] items-center justify-center left-[1146px] top-[215px] w-[141.971px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
         <div className="flex-none rotate-[194.339deg] scale-y-[-100%]">
           <div className="h-[101.942px] relative w-[120.477px]" data-name="like (1) (1) 2">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -235,7 +235,7 @@ function HowWeWorkSection1() {
 
 function Illustration() {
   return (
-    <div className="h-[515px] overflow-clip relative shrink-0 w-[518px]" data-name="Illustration">
+    <div className="h-[300px] md:h-[400px] lg:h-[515px] overflow-clip relative shrink-0 w-full max-w-[518px]" data-name="Illustration">
       <div className="absolute h-[403.5px] left-[145.5px] top-[108.5px] w-[277.5px]">
         <div className="absolute inset-[-1.87%_-2.88%_0_-2.88%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 293.501 411.027">
@@ -280,7 +280,7 @@ function Illustration() {
 
 function Illustration1() {
   return (
-    <div className="h-[515px] overflow-clip relative shrink-0 w-[518px]" data-name="Illustration">
+    <div className="h-[300px] md:h-[400px] lg:h-[515px] overflow-clip relative shrink-0 w-full max-w-[518px]" data-name="Illustration">
       <div className="absolute h-[402.5px] left-[11px] top-[110.5px] w-[458px]">
         <div className="absolute inset-[-1.85%_-1.75%_-1.99%_-1.46%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 472.701 417.933">
@@ -324,7 +324,7 @@ function Figma() {
 
 function Illustration2() {
   return (
-    <div className="h-[515px] overflow-clip relative shrink-0 w-[518px]" data-name="Illustration">
+    <div className="h-[300px] md:h-[400px] lg:h-[515px] overflow-clip relative shrink-0 w-full max-w-[518px]" data-name="Illustration">
       <div className="absolute h-[475.925px] left-[43px] top-[37.07px] w-[402px]">
         <div className="absolute inset-[-1.68%_-1.48%_-1.68%_-1.32%]">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 413.263 491.94">
@@ -351,27 +351,27 @@ function Illustration2() {
 
 function Step({ title, desc, illustration }: { title: React.ReactNode, desc: string, illustration: React.ReactNode }) {
   return (
-    <div className="content-stretch flex gap-[32px] items-start relative shrink-0" data-name="Step">
-      <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 text-[#1f392c]" data-name="Title & Description">
-        <p className="font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[40px] text-nowrap" style={{ fontVariationSettings: "'opsz' 14" }}>
+    <div className="content-stretch flex flex-col lg:flex-row gap-8 lg:gap-[32px] items-center lg:items-start relative shrink-0 w-full" data-name="Step">
+      <div className="content-stretch flex flex-col gap-[16px] items-center lg:items-start relative shrink-0 text-[#1f392c] order-2 lg:order-1" data-name="Title & Description">
+        <p className="font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[clamp(24px,4vw,40px)] text-center lg:text-left" style={{ fontVariationSettings: "'opsz' 14" }}>
           {title}
         </p>
-        <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[20px] w-[396px]" style={{ fontVariationSettings: "'opsz' 14" }}>{desc}</p>
+        <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[clamp(16px,2vw,20px)] w-full max-w-[396px] text-center lg:text-left" style={{ fontVariationSettings: "'opsz' 14" }}>{desc}</p>
       </div>
-      {illustration}
+      <div className="order-1 lg:order-2">{illustration}</div>
     </div>
   );
 }
 
 function StepReverse({ title, desc, illustration }: { title: React.ReactNode, desc: string, illustration: React.ReactNode }) {
   return (
-    <div className="content-stretch flex gap-[32px] items-start relative shrink-0" data-name="Step">
-      {illustration}
-      <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 text-[#1f392c]" data-name="Title & Description">
-        <p className="font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[40px] text-nowrap" style={{ fontVariationSettings: "'opsz' 14" }}>
+    <div className="content-stretch flex flex-col lg:flex-row gap-8 lg:gap-[32px] items-center lg:items-start relative shrink-0 w-full" data-name="Step">
+      <div className="order-1">{illustration}</div>
+      <div className="content-stretch flex flex-col gap-[16px] items-center lg:items-start relative shrink-0 text-[#1f392c] order-2" data-name="Title & Description">
+        <p className="font-['DM_Sans:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[clamp(24px,4vw,40px)] text-center lg:text-left" style={{ fontVariationSettings: "'opsz' 14" }}>
           {title}
         </p>
-        <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[20px] w-[396px]" style={{ fontVariationSettings: "'opsz' 14" }}>{desc}</p>
+        <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[clamp(16px,2vw,20px)] w-full max-w-[396px] text-center lg:text-left" style={{ fontVariationSettings: "'opsz' 14" }}>{desc}</p>
       </div>
     </div>
   );
@@ -379,13 +379,13 @@ function StepReverse({ title, desc, illustration }: { title: React.ReactNode, de
 
 export function HowItWorks() {
   return (
-    <div className="flex flex-col items-center w-full">
+    <div className="flex flex-col items-center w-full overflow-hidden">
       <Frame27 />
       <HowWeWorkSection />
       <HowWeWorkSection1 />
       <div className="relative shrink-0 w-full" data-name="How we Work Section - 3">
         <div className="flex flex-col items-center overflow-clip rounded-[inherit] size-full">
-          <div className="content-stretch flex flex-col gap-[64px] items-center px-[245px] py-[64px] relative w-full">
+          <div className="content-stretch flex flex-col gap-8 md:gap-[64px] items-center px-4 md:px-8 lg:px-[100px] xl:px-[245px] py-8 md:py-[64px] relative w-full">
             <Step 
               title="1# Vous recherchez des talents" 
               desc="Our agency's research-driven approach involves gathering insights into our clients' industries, competitors, and target audiences to develop tailored strategies that deliver exceptional results. This deep understanding allows us to create innovative and effective campaigns that resonate with our clients' audiences."

@@ -31,7 +31,7 @@ function Logo1() {
 
 function Menu() {
   return (
-    <div className="content-stretch flex font-['SF_Pro_Text:Medium',sans-serif] gap-[32px] items-start leading-[24px] not-italic relative shrink-0 text-[#1f392c] text-[20px] text-nowrap" data-name="Menu">
+    <div className="content-stretch hidden lg:flex font-['SF_Pro_Text:Medium',sans-serif] gap-4 xl:gap-[32px] items-start leading-[24px] not-italic relative shrink-0 text-[#1f392c] text-[16px] xl:text-[20px] text-nowrap" data-name="Menu">
       <p className="relative shrink-0">Partners</p>
       <p className="relative shrink-0">How we Work</p>
       <p className="relative shrink-0">Review</p>
@@ -52,9 +52,9 @@ function Button() {
 
 function Title() {
   return (
-    <div className="h-0 relative shrink-0 w-[1122px]" data-name="Title">
+    <div className="h-0 relative shrink-0 w-full max-w-[1122px]" data-name="Title">
       <div className="absolute inset-[-1px_0_0_0]">
-        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1122 1">
+        <svg className="block size-full" fill="none" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1122 1">
           <g id="Title">
             <line id="Line 4" stroke="var(--stroke-0, black)" strokeOpacity="0.2" x2="1122" y1="0.5" y2="0.5" />
           </g>
@@ -66,7 +66,7 @@ function Title() {
 
 function Menu1() {
   return (
-    <div className="content-stretch flex font-['SF_Pro_Text:Medium',sans-serif] gap-[32px] items-start leading-[24px] not-italic relative shrink-0 text-[#1f392c] text-[20px] text-nowrap" data-name="Menu">
+    <div className="content-stretch flex font-['SF_Pro_Text:Medium',sans-serif] gap-4 lg:gap-[32px] items-start leading-[24px] not-italic relative shrink-0 text-[#1f392c] text-[14px] md:text-[16px] lg:text-[20px] text-nowrap" data-name="Menu">
       <p className="relative shrink-0">Partners</p>
       <p className="relative shrink-0">How we Work</p>
       <p className="relative shrink-0">Review</p>
@@ -77,7 +77,7 @@ function Menu1() {
 
 function Frame20() {
   return (
-    <div className="content-stretch flex gap-[50px] items-center relative shrink-0">
+    <div className="content-stretch hidden md:flex gap-4 lg:gap-[50px] items-center relative shrink-0 flex-wrap justify-center">
       {[...Array(2).keys()].map((_, i) => (
         <Menu1 key={i} />
       ))}
@@ -87,12 +87,12 @@ function Frame20() {
 
 function Frame22() {
   return (
-    <div className="content-stretch flex flex-col gap-[10px] items-center relative shrink-0 w-[1122px]">
+    <div className="content-stretch hidden md:flex flex-col gap-[10px] items-center relative shrink-0 w-full max-w-[1122px]">
       <Title />
       <Frame20 />
-      <div className="h-0 relative shrink-0 w-[1021px]">
+      <div className="h-0 relative shrink-0 w-full max-w-[1021px]">
         <div className="absolute inset-[-1px_0_0_0]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1021 1">
+          <svg className="block size-full" fill="none" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1021 1">
             <line id="Line 5" stroke="var(--stroke-0, black)" strokeOpacity="0.2" x2="1021" y1="0.5" y2="0.5" />
           </svg>
         </div>
@@ -103,7 +103,7 @@ function Frame22() {
 
 function Frame19() {
   return (
-    <div className="content-stretch flex gap-[211px] items-center relative shrink-0 w-full justify-between">
+    <div className="content-stretch flex items-center relative shrink-0 w-full justify-between">
       <Logo1 />
       <Menu />
       <Button />
