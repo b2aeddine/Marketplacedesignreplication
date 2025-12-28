@@ -1,5 +1,5 @@
 import React from 'react';
-import imgImage25 from "figma:asset/59ba0d40ae079fb4994abba251d7610744b0f8db.png";
+import imgImage25 from "@/assets/59ba0d40ae079fb4994abba251d7610744b0f8db.png";
 
 interface CategoryCardProps {
   title?: string;

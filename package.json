@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "dev": "vite"
+    "dev": "vite",
+    "check:figma-assets": "bash scripts/check-figma-assets.sh",
+    "prebuild": "npm run check:figma-assets"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",

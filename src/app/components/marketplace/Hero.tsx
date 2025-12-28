@@ -1,10 +1,10 @@
 import React from 'react';
 import svgPaths from "../../../imports/svg-n1s2bt9r7k";
-import imgHands2 from "figma:asset/5e60311268eac808eaade0b025715f79f24ade31.png";
-import imgFb112 from "figma:asset/75d098edacfd94c1bce6468b9eff3779ea74f979.png";
-import imgRemoveBg1 from "figma:asset/07b35ab1de6cca52d52120a93c6191bf7086177d.png";
-import imgYtb112 from "figma:asset/050a18f88ed7ea85f0983ec1fc11f43b07aed07b.png";
-import imgInst112 from "figma:asset/86dcefb9477f61f9ce7296bd5cfb47bd9bc77b13.png";
+import imgHands2 from "@/assets/5e60311268eac808eaade0b025715f79f24ade31.png";
+import imgFb112 from "@/assets/75d098edacfd94c1bce6468b9eff3779ea74f979.png";
+import imgRemoveBg1 from "@/assets/07b35ab1de6cca52d52120a93c6191bf7086177d.png";
+import imgYtb112 from "@/assets/050a18f88ed7ea85f0983ec1fc11f43b07aed07b.png";
+import imgInst112 from "@/assets/86dcefb9477f61f9ce7296bd5cfb47bd9bc77b13.png";
 
 function Group() {
   return (
