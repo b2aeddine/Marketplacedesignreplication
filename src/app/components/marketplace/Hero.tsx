@@ -66,7 +66,7 @@ function Content() {
 
 function Input() {
   return (
-    <div className="bg-white content-stretch flex items-center pl-[16px] pr-0 py-[8px] relative rounded-[100px] shrink-0 w-[567px]" data-name="Input">
+    <div className="bg-white content-stretch flex items-center pl-[16px] pr-0 py-[8px] relative rounded-[100px] shrink-0 w-full max-w-[567px]" data-name="Input">
       <div className="basis-0 flex flex-row grow items-center self-stretch shrink-0">
         <Content />
       </div>
@@ -76,16 +76,16 @@ function Input() {
 
 function Content1() {
   return (
-    <div className="content-stretch flex flex-col gap-[32px] items-center justify-center relative shrink-0" data-name="Content">
-      <div className="absolute h-[129px] left-[9.5px] top-[103px] w-[974px]" data-name="Line">
+    <div className="content-stretch flex flex-col gap-[32px] items-center justify-center relative shrink-0 w-full px-4 md:px-8" data-name="Content">
+      <div className="absolute h-[129px] left-[9.5px] top-[103px] w-[974px] hidden lg:block" data-name="Line">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 974 129">
           <path d={svgPaths.p2ddaf200} fill="var(--fill-0, #FEA38E)" id="Line" />
         </svg>
       </div>
-      <p className="font-['DM_Sans:Bold',sans-serif] font-bold leading-[112px] relative shrink-0 text-[#1f392c] text-[80px] text-center w-[977px]" style={{ fontVariationSettings: "'opsz' 14" }}>
-        VENDEZ VOS SERVICES SANS PROSPECTER GRACE A L’AFFILIATION
+      <p className="font-['DM_Sans:Bold',sans-serif] font-bold leading-[1.2] lg:leading-[112px] relative shrink-0 text-[#1f392c] text-[clamp(28px,7vw,80px)] text-center w-full max-w-[977px]" style={{ fontVariationSettings: "'opsz' 14" }}>
+        VENDEZ VOS SERVICES SANS PROSPECTER GRACE A L'AFFILIATION
       </p>
-      <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[#1f392c] text-[20px] text-center w-[773px]" style={{ fontVariationSettings: "'opsz' 14" }}>{`Our team combines strategy, design, and technology to breathe life into your brand. Collaborate with us to leave a lasting impression on your audience. `}</p>
+      <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[32px] relative shrink-0 text-[#1f392c] text-[clamp(16px,2vw,20px)] text-center w-full max-w-[773px]" style={{ fontVariationSettings: "'opsz' 14" }}>{`Our team combines strategy, design, and technology to breathe life into your brand. Collaborate with us to leave a lasting impression on your audience. `}</p>
       <Input />
     </div>
   );
@@ -113,8 +113,8 @@ function Line1() {
 
 export function Hero() {
   return (
-    <div className="bg-[#f8f5f0] content-stretch flex flex-col gap-[8px] items-center justify-center px-[160px] py-[140px] relative shrink-0 w-[1512px] overflow-hidden" data-name="Hero Section">
-      <div className="absolute flex h-[740.706px] items-center justify-center left-[-100px] top-[857px] w-[856.121px]" style={{ "--transform-inner-width": "300", "--transform-inner-height": "150" } as React.CSSProperties}>
+    <div className="bg-[#f8f5f0] content-stretch flex flex-col gap-[8px] items-center justify-center px-4 md:px-8 lg:px-[80px] xl:px-[160px] py-[60px] md:py-[100px] lg:py-[140px] relative shrink-0 w-full max-w-[1512px] overflow-hidden" data-name="Hero Section">
+      <div className="absolute hidden lg:flex h-[740.706px] items-center justify-center left-[-100px] top-[857px] w-[856.121px]" style={{ "--transform-inner-width": "300", "--transform-inner-height": "150" } as React.CSSProperties}>
         <div className="flex-none rotate-[300deg]">
           <div className="h-[742.138px] relative w-[426.82px]" data-name="Vector">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 426.82 742.138">
@@ -123,19 +123,19 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <Line />
-      <div className="absolute h-[426px] left-[1243.5px] top-[415px] w-[403px]" data-name="hands_2">
+      <div className="hidden lg:block"><Line /></div>
+      <div className="absolute hidden xl:block h-[426px] left-[1243.5px] top-[415px] w-[403px]" data-name="hands_2">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <img alt="" className="absolute h-[150.09%] left-[-118.58%] max-w-none top-[-50.09%] w-[218.58%]" src={imgHands2} />
         </div>
       </div>
-      <div className="absolute h-[217px] left-[-142.5px] top-[-8px] w-[414px]" data-name="hands_2">
+      <div className="absolute hidden lg:block h-[217px] left-[-142.5px] top-[-8px] w-[414px]" data-name="hands_2">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <img alt="" className="absolute h-[252.75%] left-0 max-w-none top-0 w-[182.09%]" src={imgHands2} />
         </div>
       </div>
       <Content1 />
-      <div className="absolute flex h-[41.798px] items-center justify-center left-[1459px] top-[140px] w-[42.352px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
+      <div className="absolute hidden xl:flex h-[41.798px] items-center justify-center left-[1459px] top-[140px] w-[42.352px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
         <div className="flex-none rotate-[21.853deg]">
           <div className="h-[31.858px] relative w-[32.854px]" data-name="fb (1) (1) 2">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -144,7 +144,7 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute flex h-[114.186px] items-center justify-center left-[1255px] top-[236px] w-[81.683px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
+      <div className="absolute hidden xl:flex h-[114.186px] items-center justify-center left-[1255px] top-[236px] w-[81.683px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
         <div className="flex-none rotate-[351.383deg]">
           <div className="h-[105.391px] relative w-[66.644px]" data-name="Remove-bg 1">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -153,8 +153,8 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <Line1 />
-      <div className="absolute flex h-[78.817px] items-center justify-center left-[207px] top-[257px] w-[60.678px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
+      <div className="hidden xl:block"><Line1 /></div>
+      <div className="absolute hidden lg:flex h-[78.817px] items-center justify-center left-[207px] top-[257px] w-[60.678px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
         <div className="flex-none rotate-[345deg]">
           <div className="h-[69.775px] relative w-[44.122px]" data-name="Remove-bg 1">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -163,7 +163,7 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute flex h-[67.249px] items-center justify-center left-[132px] top-[699px] w-[68.328px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
+      <div className="absolute hidden lg:flex h-[67.249px] items-center justify-center left-[132px] top-[699px] w-[68.328px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
         <div className="flex-none rotate-[342.356deg]">
           <div className="h-[53.139px] relative w-[54.8px]" data-name="fb (1) (1) 1">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -172,7 +172,7 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute flex h-[40.124px] items-center justify-center left-[1309px] top-[643.87px] w-[45.039px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
+      <div className="absolute hidden xl:flex h-[40.124px] items-center justify-center left-[1309px] top-[643.87px] w-[45.039px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
         <div className="flex-none rotate-[25.588deg]">
           <div className="h-[26.695px] relative w-[37.153px]" data-name="ytb (1) (1) 2">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -181,7 +181,7 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute flex h-[34.42px] items-center justify-center left-[35.49px] top-[336.39px] w-[34.701px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
+      <div className="absolute hidden md:flex h-[34.42px] items-center justify-center left-[35.49px] top-[336.39px] w-[34.701px]" style={{ "--transform-inner-width": "0", "--transform-inner-height": "0" } as React.CSSProperties}>
         <div className="flex-none rotate-[157.752deg] scale-y-[-100%]">
           <div className="h-[26.243px] relative w-[26.757px]" data-name="inst (1) (1) 2">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
